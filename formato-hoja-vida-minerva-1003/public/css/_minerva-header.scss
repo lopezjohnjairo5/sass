@@ -1,0 +1,80 @@
+#minerva-template{
+    //background-color: red;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid black;
+
+    #header-minerva{
+        @include flex($direction: column,$j-content: flex-end, $a-items: end);        
+        header{
+            @include flex($direction: column,$j-content: center, $a-items: center);
+            width: 50%;
+            margin-bottom: 20px;
+            border: 3px solid var(--border-color);
+            text-align: center;
+            border-radius: var(--border-radius);
+            @include paddin-size($paddtd: 5px, $paddlr: 5px);
+    
+            h1{
+                font-weight: bold;
+                font-size: var(--h1-size);
+            }
+            h4{
+                color: var(--text-color);
+                font-size: var(--h4-size);
+            }
+        }
+    
+        #header-info{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            color: var(--text-color);
+            @include paddin-size($paddtd: 5px, $paddlr: 5px);
+            #date-info{
+                width: 20%;
+                @include paddin-size($paddtd: 0, $paddlr: 5px);
+                span{
+                    width: 100%;
+                }
+                #date-input{
+
+                    input{
+                        @include input-styles($width: 30%);
+                    }
+                }
+            }
+
+            #new-job-info{
+                width: 60%;
+                border-left: 2px solid var(--border-color);
+                border-right: 2px solid var(--border-color);
+                @include paddin-size($paddtd: 0, $paddlr: 5px);
+                span{
+                    width: 100%;
+                }
+                input{
+                    @include input-styles($width: 100%); // llamando un mixin
+                }
+            }
+
+            #cod-job-info{
+                width: 20%;
+                @include paddin-size($paddtd: 0, $paddlr: 5px);
+                span{
+                    width: 100%;
+                }
+                input{
+                    @include input-styles($width: 100%);
+                }
+            }
+        }
+    }
+}
+
+
+

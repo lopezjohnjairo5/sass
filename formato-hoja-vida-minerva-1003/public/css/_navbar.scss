@@ -1,0 +1,15 @@
+#navbar{
+    background-color: red;
+    width: 100%;
+    ul{
+        @include paddin-size($paddtd: 10px, $paddlr: 10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        li{
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}

@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --border-color: #3a4261;
+  --text-color: #48558a;
+  --background-header-color: #4b5ca0;
+  --header-color: #ffffff;
+  --sub-header-color: #322b50;
+  --border-radius: 10px;
+  --h1-size: 2em;
+  --h2-size: 1.5em;
+  --h3-size: 1em;
+  --h4-size: 0.7em;
+  --h5-size: 0.5em;
+  --span-size: 0.7em;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: var(--span-size);
+}
+
+#navbar {
+  background-color: red;
+  width: 100%;
+}
+#navbar ul {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#navbar ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#minerva-template {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+#minerva-template #header-minerva {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+#minerva-template #header-minerva header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+  border: 3px solid var(--border-color);
+  text-align: center;
+  border-radius: var(--border-radius);
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+#minerva-template #header-minerva header h1 {
+  font-weight: bold;
+  font-size: var(--h1-size);
+}
+#minerva-template #header-minerva header h4 {
+  color: var(--text-color);
+  font-size: var(--h4-size);
+}
+#minerva-template #header-minerva #header-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+#minerva-template #header-minerva #header-info #date-info {
+  width: 20%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+#minerva-template #header-minerva #header-info #date-info span {
+  width: 100%;
+}
+#minerva-template #header-minerva #header-info #date-info #date-input input {
+  border: none;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 30%;
+  font-size: 0.7em;
+}
+#minerva-template #header-minerva #header-info #new-job-info {
+  width: 60%;
+  border-left: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+#minerva-template #header-minerva #header-info #new-job-info span {
+  width: 100%;
+}
+#minerva-template #header-minerva #header-info #new-job-info input {
+  border: none;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.7em;
+}
+#minerva-template #header-minerva #header-info #cod-job-info {
+  width: 20%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+#minerva-template #header-minerva #header-info #cod-job-info span {
+  width: 100%;
+}
+#minerva-template #header-minerva #header-info #cod-job-info input {
+  border: none;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.7em;
+}
+
+#general-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+}
+#general-info .principal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0;
+  background-color: var(--background-header-color);
+  color: var(--header-color);
+  border-radius: var(--border-radius);
+}
+#general-info #content-general-info {
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#general-info #content-general-info #input-content-general-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#general-info #content-general-info #input-content-general-info label {
+  width: 50%;
+  border-bottom: 2px solid var(--border-color);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#general-info #content-general-info #input-content-general-info label input {
+  border: none;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.7em;
+}
+#general-info #content-general-info #input-content-general-info .border-left {
+  border-left: 2px solid var(--border-color);
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+#general-info #content-general-info #photo-content-general-info {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}
+#general-info #content-general-info #photo-content-general-info #preview-photo-general-info {
+  max-height: 70%;
+}/*# sourceMappingURL=main.css.map */

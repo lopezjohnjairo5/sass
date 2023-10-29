@@ -1,0 +1,47 @@
+#general-info{
+    width: 100%;
+    @include flex($direction: column,$j-content: none, $a-items: none);
+    .principal-header{
+        @include flex($direction: row,$j-content: center, $a-items: center);
+        text-align: center;
+        margin: 5px 0;
+        background-color: var(--background-header-color);
+        color: var(--header-color);
+        border-radius: var(--border-radius);
+    }
+    #content-general-info{
+        border: 3px solid var(--border-color);
+        border-radius: var(--border-radius);
+        @include paddin-size($paddtd: 10px, $paddlr: 10px);
+        @include flex($direction: row,$j-content: center,$a-items: center);
+    
+        #input-content-general-info{
+            @include flex($direction: row, $j-content:flex-start, $a-items:center);
+            flex-wrap: wrap;
+            label{
+                width: 50%;
+                border-bottom: 2px solid var(--border-color);
+                box-sizing: border-box;
+                @include flex($direction: column, $j-content:flex-start, $a-items:flex-start);
+                input{
+                    @include input-styles($width: 100%, $font-size: 0.7em);
+                }
+            }
+            
+            .border-left{
+                border-left: 2px solid var(--border-color);
+                @include paddin-size($paddtd: 0, $paddlr: 5px);
+            }
+        }
+
+        #photo-content-general-info{
+            position: relative;
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            #preview-photo-general-info{
+                max-height: 70%;
+            }
+        }
+    }
+}
