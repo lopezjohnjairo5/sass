@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$text-color : rgb(255,255,255);
+$background-color : rgb(255,255,255);
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(126,188,255);
+    background: linear-gradient(0deg, rgba(126,188,255,1) 0%, rgba(254,85,209,1) 50%, rgba(247,111,252,1) 100%); 
+}
+
+@mixin direction($display:flex,$direction:row,$justify:center,$align:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin padding($padding:10px, $box:border-box){
+    padding: $padding;
+    box-sizing: $box;
+}
+
+@mixin size-element($with:100%,$height:100%){
+    width: $with;
+    height: $height;
+}
