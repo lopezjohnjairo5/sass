@@ -26,6 +26,14 @@
                 <a href="#"><img src="./imgs/web.jpg" alt="4"></a>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis corrupti atque, maiores vitae illo mollitia est qui libero perferendis consequuntur nisi sint voluptatem reiciendis quo aliquid repellendus? Assumenda, vitae commodi!</p>
             </div>
+            <div class="img-galery">
+                <a href="#"><img src="./imgs/3d.jpg" alt="4"></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis corrupti atque, maiores vitae illo mollitia est qui libero perferendis consequuntur nisi sint voluptatem reiciendis quo aliquid repellendus? Assumenda, vitae commodi!</p>
+            </div>
+            <div class="img-galery">
+                <a href="#"><img src="./imgs/game.jpg" alt="4"></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis corrupti atque, maiores vitae illo mollitia est qui libero perferendis consequuntur nisi sint voluptatem reiciendis quo aliquid repellendus? Assumenda, vitae commodi!</p>
+            </div>
         </div>
         <div id="tabs-projects">
             <a href="#" title="web"><span class="material-symbols-outlined">language</span><span class="Span-info">Web</span></a>
